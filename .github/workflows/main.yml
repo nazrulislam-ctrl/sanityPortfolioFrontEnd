@@ -3,12 +3,11 @@ on:
     branches: main
 
 env:
-  VITE_APIKEY: ${{ secrets.VITE_APIKEY }}
-  VITE_AUTHDOMAIN: ${{ secrets.VITE_AUTHDOMAIN }}
-  VITE_PROJECTID: ${{ secrets.VITE_PROJECTID }}
-  VITE_STORAGEBUCKET: ${{ secrets.VITE_STORAGEBUCKET }}
-  VITE_MESSAGINGSENDERID: ${{ secrets.VITE_MESSAGINGSENDERID }}
-  VITE_APPID: ${{ secrets.VITE_APPID }}
+  VITE_PROJECT_ID: ${{ secrets.VITE_PROJECT_ID }}
+  VITE_DATASET_NAME: ${{ secrets.VITE_DATASET_NAME }}
+  VITE_SANITY_TOKEN: ${{ secrets.VITE_SANITY_TOKEN }}
+  VITE_DOMAIN: ${{ secrets.VITE_DOMAIN }}
+  VITE_CLIENTID: ${{ secrets.VITE_CLIENTID }}
 
 name: 🚀 Deploy website on push
 jobs:
